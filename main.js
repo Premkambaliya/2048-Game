@@ -205,3 +205,24 @@ function isGameOver() {
     }
     return true;
 }
+// High score stored in localStorage
+
+// Initialize game
+window.onload = function () {
+    document.getElementById("high-score").innerText = highScore;
+    setGame();
+
+    // Add event listener for Restart button
+    document.getElementById("restart-btn").addEventListener("click", restartGame);
+};
+
+function restartGame() {
+    // Reset score
+    score = 0;
+
+    // Clear the board
+    document.getElementById("board").innerHTML = "";
+
+    // Reinitialize the game
+    setGame();
+}

@@ -88,3 +88,55 @@ hr {
     background-color: #3c3a32;
     color: white;
 }
+#board {
+    height: 400px;
+    width: 400px;
+    background-color: #cdc1b5;
+    border: 6px solid #b79e86;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+#restart-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 20px auto;
+    display: block;
+    border: none;
+    background-color: #f57c5f;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restart-btn:hover {
+    background-color: #f65d3b;
+}
+
+@media (max-width: 600px) {
+    #board {
+        height: 300px;
+        width: 300px;
+    }
+
+    .tile {
+        height: 65px;
+        width: 65px;
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    #restart-btn {
+        font-size: 16px;
+    }
+}
